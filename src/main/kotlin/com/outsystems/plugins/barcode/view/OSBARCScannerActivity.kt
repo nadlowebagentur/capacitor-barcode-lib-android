@@ -411,6 +411,10 @@ class OSBARCScannerActivity : ComponentActivity() {
                     rectHeight = minOf(rectWidth, canvasHeight - (ScannerAimRectCornerPadding.toPx() * 2))
                 }
 
+                val minDimension = minOf(rectWidth, rectHeight)
+                rectWidth = minDimension
+                rectHeight = minDimension
+
                 val rectLeft = (canvasWidth - rectWidth) / 2
                 val rectTop = (canvasHeight - rectHeight) / 2
 
